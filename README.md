@@ -1,4 +1,9 @@
-# **Temperature-Guided Reasoning (TGR) + 4-bit Quantized Llama on WikiQA**
+Below is a **Markdown**-formatted document that you can place in a GitHub repository (for example, naming the file `README.md`). It includes all explanations, references, and the complete code in fenced code blocks for clarity.
+
+---
+
+```markdown
+# Temperature-Guided Reasoning (TGR) + 4-bit Quantized Llama on WikiQA
 
 This document provides a comprehensive explanation of the **Temperature-Guided Reasoning** (TGR) script that integrates:
 
@@ -12,6 +17,7 @@ This document provides a comprehensive explanation of the **Temperature-Guided R
 > *Eyad Gomaa, PhD. Gomaa Salah, AI Researcher, SILX AI, eyad@sicopilot.cloud (2024)*  
 > This paper introduces *Quasar-1*, a novel temperature-guided reasoning architecture with Token Temperature Mechanism (TTM) and Guided Sequence of Thought (GSoT). The approach demonstrates superior logical reasoning capabilities and convergence guarantees, providing a more efficient alternative to standard chain-of-thought methods.
 
+---
 
 ## **Table of Contents**
 
@@ -40,9 +46,9 @@ This document provides a comprehensive explanation of the **Temperature-Guided R
   3. **Temperature Regularization**: Penalizes extreme temperature values that deviate from the desired initial average.
 
 - **WikiQA**  
-  This script uses the WikiQA dataset (a question-answer corpus). We filter for label=1 (correct answers) and create a minimal prompt:  
+  This script uses the WikiQA dataset (a question-answer corpus). We filter for label=1 (correct answers) and create a minimal prompt:
   \[
-  \text{"Q: <question>\nA: <correct_answer>"}
+    \text{"Q: <question>\nA: <correct_answer>"}
   \]  
   Then we train in a causal language modeling style.
 
@@ -501,6 +507,7 @@ if __name__ == "__main__":
    pip install transformers>=4.31 bitsandbytes>=0.38.1 datasets
    # Optionally: accelerate wandb
    ```
+
 2. **Run the Script**  
    ```bash
    python train.py
@@ -523,7 +530,7 @@ if __name__ == "__main__":
    - `[min_value=-50, max_value=50]` is an empirical choice. If you see repeated device-side asserts or undesired generation, try adjusting the clamp bounds.
 
 3. **Extended GSoT**  
-   - We only apply GSoT at the final hidden states. Some research (e.g., in [*Guidance Is All You Need*](#) by Gomaa & Salah, 2024) suggests injecting TTM at every layer for more robust reasoning.
+   - We only apply GSoT at the final hidden states. Some research (e.g., in *Guidance Is All You Need* by Gomaa & Salah, 2024) suggests injecting TTM at every layer for more robust reasoning.
 
 4. **Evaluation**  
    - The script uses `evaluation_strategy="no"` for simplicity. For a real application, consider a dev set or custom metrics.
@@ -531,5 +538,10 @@ if __name__ == "__main__":
 5. **Llama License**  
    - *Llama 2* is distributed under specific license terms from Meta. Ensure you have valid acceptance to use it.
 
-> **Reference**:  
-> *Gomaa, E. (2024). Guidance is All You Need: Temperature-Guided Reasoning in Large Language Models. arXiv preprint (arXiv:2412.06822v1)
+> **Reference**  
+> Gomaa, E. (2024). *Guidance is All You Need: Temperature-Guided Reasoning in Large Language Models.* arXiv preprint (arXiv:2412.06822v1)
+
+```
+```
+
+---
