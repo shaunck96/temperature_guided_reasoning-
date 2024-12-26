@@ -1,5 +1,3 @@
----
-
 # **Temperature-Guided Reasoning (TGR) + 4-bit Quantized Llama on WikiQA**
 
 This document provides a comprehensive explanation of the **Temperature-Guided Reasoning** (TGR) script that integrates:
@@ -14,7 +12,6 @@ This document provides a comprehensive explanation of the **Temperature-Guided R
 > *Eyad Gomaa, PhD. Gomaa Salah, AI Researcher, SILX AI, eyad@sicopilot.cloud (2024)*  
 > This paper introduces *Quasar-1*, a novel temperature-guided reasoning architecture with Token Temperature Mechanism (TTM) and Guided Sequence of Thought (GSoT). The approach demonstrates superior logical reasoning capabilities and convergence guarantees, providing a more efficient alternative to standard chain-of-thought methods.
 
----
 
 ## **Table of Contents**
 
