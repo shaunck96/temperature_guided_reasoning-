@@ -503,7 +503,7 @@ if __name__ == "__main__":
    ```
 2. **Run the Script**  
    ```bash
-   python your_script.py
+   python train.py
    ```
    - The script will download the Llama 2 (7B) checkpoint from Hugging Face Hub (requires acceptance of Meta’s Llama 2 license).  
    - Loads WikiQA, trains, and runs an inference example.
