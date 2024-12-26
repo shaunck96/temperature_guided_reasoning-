@@ -1,8 +1,3 @@
-Below is a **Markdown**-formatted document that you can place in a GitHub repository (for example, naming the file `README.md`). It includes all explanations, references, and the complete code in fenced code blocks for clarity.
-
----
-
-```markdown
 # Temperature-Guided Reasoning (TGR) + 4-bit Quantized Llama on WikiQA
 
 This document provides a comprehensive explanation of the **Temperature-Guided Reasoning** (TGR) script that integrates:
